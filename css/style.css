@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.prices {
+  text-align: center;
+  margin-top: clamp(61px, 13.15vw, 150px);
+}
+.prices h2 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: bold;
+}
+.prices > h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 50px;
+}
+.prices__items {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.prices__card {
+  width: 322px;
+  padding: 24px 24px 32px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  color: #22343d;
+}
+.prices__card:hover {
+  background-color: #02897a;
+  color: white;
+}
+.prices__card h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+}
+.prices__card h4 {
+  font-family: Poppins;
+  line-height: 250%;
+  font-size: 16px;
+  line-height: 137%;
+  margin-top: 8px;
+}
+.prices__card > p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  margin-top: 16px;
+}
+.prices__card-box {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #02897a;
+}
+.prices__card-price {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 132%;
+}
+.prices__card-content {
+  text-align: left;
+}
+.prices__card-content p:first-child {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+}
+.prices__card-content p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #afafaf;
+}
+.prices button {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Montserrat;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background-color: #02897a;
+  color: white;
+  margin-top: 38px;
+}
+.prices__card:hover .prices__card-box {
+  color: white;
+}
+.prices__card:hover .prices__card-content p:last-child {
+  color: #e0e0e0;
+}
+.prices__card:hover button {
+  background-color: white;
+  color: #02897a;
+}
+
+.join {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 32px;
+  width: clamp(370px, 84.91vw, 968px);
+  background-color: #02897a;
+  padding-top: clamp(17px, 4.38vw, 50px);
+  padding-inline: clamp 22px, 4.38vw, 50px;
+  margin-top: 145px;
+  height: 345px;
+}
+.join__content {
+  margin-left: 51px;
+  width: 510px;
+}
+.join__img {
+  display: flex;
+  margin-bottom: 10px;
+}
+.join h3 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 52px;
+}
+.join button {
+  border-radius: 8px;
+  padding: 13px 35px 7px 33px;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #02897a;
+}
+
+.reviews {
+  margin-top: 156px;
+}
+.reviews__text {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: Poppins;
+}
+
+.reviews h3 {
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.reviews > p {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.clients {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+}
+.clients__content {
+  border: 1px solid #DEDEDE;
+  width: 327px;
+}
+.clients__content > p {
+  width: 275px;
+  margin-bottom: 16px;
+}
+.clients__content-img {
+  display: flex;
+  margin-bottom: 23.6px;
+  align-items: center;
+  gap: 14px;
+}
+
+.star {
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.clients__content {
+  padding-left: 25px;
+}
+
+.line p {
+  line-height: 20px;
+  color: #02897A;
+}
+
+footer {
+  margin-top: clamp(100px, 13vw, 151px);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo a {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer__logo span {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #173A56;
+}
+.footer__social-btn {
+  display: flex;
+  gap: 16px;
+  margin-top: 25px;
+}
+.footer__social-btn a {
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
+  padding: 10px;
+  background-color: #EDFFFC;
+  border-radius: 50%;
+}
+.footer__social-btn a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.footer__resource, .footer__legal-stuff {
+  font-family: Poppins;
+}
+.footer__resource p, .footer__legal-stuff p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.footer__resource a, .footer__legal-stuff a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.footer__sign-up {
+  width: 325px;
+  font-family: Poppins;
+}
+.footer__sign-up p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-bottom: 34px;
+}
+.footer__sign-up form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.footer__sign-up form input {
+  padding: 10px 5px;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+}
+.footer__sign-up form button {
+  width: 131px;
+  padding: 8px 15px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #02897A;
+  border-radius: 4px;
+}
+.footer__sign-up form button:hover {
+  background-color: #02897A;
+  color: white;
+  transition: 0.3s;
+}

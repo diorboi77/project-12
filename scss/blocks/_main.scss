@@ -1,0 +1,185 @@
+.prices{
+  text-align: center;
+  margin-top: clamp(61px, 13.15vw ,150px);
+  h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  &>h3{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0 50px;
+  }
+  &__items{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__card{
+    width: 322px;
+    padding: 24px 24px 32px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    color: #22343d;
+    &:hover{
+      background-color: #02897a;
+      color: white;
+    }
+    h3{
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 167%;
+    }
+    h4{
+      font-family: Poppins;
+      line-height: 250%;
+      font-size: 16px;
+      line-height: 137%;
+      margin-top: 8px;
+    }
+    &>p{
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 137%;
+      margin-top: 16px;
+    }
+  }
+  &__card-box{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #02897a;
+  }
+  &__card-price{
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 132%;
+  }
+  &__card-content{
+    text-align: left;
+    & p:first-child{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 125%;
+    }
+    & p:last-child{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #afafaf;
+    }
+  }
+  & button{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Montserrat;
+    padding: 11px 18px;
+    border-radius: 8px;
+    background-color: #02897a;
+    color: white;
+    margin-top: 38px;
+  }
+  &__card:hover &__card-box{
+    color: white;
+  }
+  &__card:hover &__card-content p:last-child{
+    color: #e0e0e0;
+  }
+  &__card:hover button{
+    background-color: white;
+    color: #02897a;
+  }
+}
+.join{
+  display: flex;
+  margin: 0 auto;
+  border-radius: 32px;
+  width: clamp(370px, 84.91vw ,968px);
+  background-color: #02897a;
+  padding-top: clamp(17px, 4.38vw ,50px) ;
+  padding-inline: clamp (22px, 4.38vw, 50px);
+  margin-top: 145px;
+  height: 345px;
+  &__content{
+    margin-left: 51px;
+    width: 510px;
+  }
+  &__img{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  h3{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 52px;
+  }
+  & button{
+    border-radius: 8px;
+    padding: 13px 35px 7px 33px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #02897a;
+  }
+}
+.reviews{
+  margin-top: 156px;
+  &__text{
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-family: Poppins;
+  }
+}
+.reviews h3{
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.reviews>p{
+  // width: 537px;
+  text-align: center;
+  // margin-bottom: 50px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22px;
+}
+.clients{
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+  &__content{
+    border: 1px solid #DEDEDE;
+    width: 327px;
+  }
+  &__content>p{
+    width: 275px;
+    margin-bottom: 16px;
+  }
+  &__content-img{
+    display: flex;
+    margin-bottom: 23.6px;
+    align-items: center;
+    gap: 14px;
+  }
+}
+.star{
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+.clients__content{
+  padding-left: 25px;
+}
+.line p{
+  line-height: 20px;
+  color: #02897A;
+}
